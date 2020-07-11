@@ -1,7 +1,7 @@
 package Recurrsion;
 import java.util.*;
 class shin{
-    public static String removeX(String X,String Z,int i,int c)
+    public static String removeX(String X,String Z,int i)
     {
         // String A="";
         if(i>X.length()-1)
@@ -11,7 +11,7 @@ class shin{
         }
         if(X.charAt(i)=='x')
         {
-            
+           
             return removeX(X,Z,i+1);
         }
         else
@@ -28,9 +28,9 @@ class shin{
         Scanner s=new Scanner(System.in);
         String S=s.nextLine();
         String Z="";
-
+     
         System.out.println(removeX(S,Z,0));
-    
+       
 
 
     }
