@@ -54,13 +54,13 @@ public class MergeSort {
 
     }
 
-    public static void MergeSort(int arr[],int st,int ed)
+    public static void MergeSort1(int arr[],int st,int ed)
     {
         if(st<ed)
         {
             int mid=(st+ed)/2;
-            MergeSort(arr,st,mid);
-            MergeSort(arr,mid+1,ed);
+            MergeSort1(arr,st,mid);
+            MergeSort1(arr,mid+1,ed);
 
             Merge(arr,st,mid,ed);
         }
@@ -78,7 +78,7 @@ public class MergeSort {
             arr[i]=s.nextInt();
         }
 
-        MergeSort(arr,0,n-1);
+        MergeSort1(arr,0,n-1);
 
         for(int i=0;i<n;i++)
         {
