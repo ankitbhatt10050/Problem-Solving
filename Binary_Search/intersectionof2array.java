@@ -6,7 +6,7 @@ public class intersectionof2array {
             int st=0;
             int ed=arr.length-1;
              
-            while(st<ed)
+            while(st<=ed)
             {
                 int mid=st+(ed-st)/2;
                 if(arr[mid]==x)
@@ -15,7 +15,7 @@ public class intersectionof2array {
                 }
                 if(arr[mid]>x)
                 {
-                    ed=mid;
+                    ed=mid-1;
                 }
                 else
                 {
@@ -41,7 +41,12 @@ public class intersectionof2array {
                 x.add(num1[i]);
             }
         }
+       Object[]a= x.toArray();
+        for(int i=0;i<a.length;i++)
+        {
+            System.out.print(a[i]);
+        }
 
-        System.out.print("the answer is "+x);
+        
     }
 }
