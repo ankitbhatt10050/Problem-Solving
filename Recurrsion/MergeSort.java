@@ -13,7 +13,7 @@ public class MergeSort {
         for(int i=0;i<n1;i++)
         {
             x[i]=arr[st+i];
-        }
+        } 
 
         for(int i=0;i<n2;i++)
         {
